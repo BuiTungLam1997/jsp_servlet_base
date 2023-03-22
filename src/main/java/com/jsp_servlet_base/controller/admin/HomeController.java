@@ -1,6 +1,6 @@
 package com.jsp_servlet_base.controller.admin;
 
-import com.jsp_servlet_base_model.UserModel;
+import com.model.UserModel;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
