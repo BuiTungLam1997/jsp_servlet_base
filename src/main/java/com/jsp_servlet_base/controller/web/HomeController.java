@@ -10,13 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@WebServlet(name = "web", value = "/web-home")
 public class HomeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        UserModel userModel = new UserModel();
-        userModel.setFullName("Hello World");
-        request.setAttribute("model",userModel);
-
         RequestDispatcher dp = request.getRequestDispatcher("/views/web/home.jsp");
         try {
             dp.forward(request, response);

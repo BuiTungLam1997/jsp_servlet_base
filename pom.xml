@@ -11,6 +11,7 @@
     <packaging>war</packaging>
 
     <properties>
+        <jstl.version>1.2</jstl.version>
         <sitemesh.version>2.4.2</sitemesh.version>
         <javaee.api.sersion>8.0.1</javaee.api.sersion>
         <jsp.api.version>2.0</jsp.api.version>
@@ -51,13 +52,17 @@
             <artifactId>servlet-api</artifactId>
             <version>${servlet-api.version}</version>
         </dependency>
-        <!---->
         <dependency>
             <groupId>opensymphony</groupId>
             <artifactId>sitemesh</artifactId>
             <version>${sitemesh.version}</version>
         </dependency>
-
+<!---->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
         <!---->
     </dependencies>
 
