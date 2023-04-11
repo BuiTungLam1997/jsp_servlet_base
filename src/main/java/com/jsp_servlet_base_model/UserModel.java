@@ -1,4 +1,4 @@
-package com.model;
+package com.jsp_servlet_base.model;
 
 public class UserModel  {
 	
